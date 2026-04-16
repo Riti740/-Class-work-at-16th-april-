@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/%20Find%20longest%20line\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f = open(\"file.txt\", \"r\")\n",
+        "\n",
+        "longest = \"\"\n",
+        "\n",
+        "for line in f:\n",
+        "    if len(line) > len(longest):\n",
+        "            longest = line\n",
+        "\n",
+        "            print(\"Longest line:\", longest)\n",
+        "            print(\"Length:\", len(longest))\n",
+        "\n",
+        "            f.close()"
+      ],
+      "metadata": {
+        "id": "_9gYxj42qbN7"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
