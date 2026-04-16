@@ -1,0 +1,53 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/File%20%20encryption%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f = open(\"file.txt\", \"r\")\n",
+        "text = f.read()\n",
+        "\n",
+        "shift = 3\n",
+        "encrypted = \"\"\n",
+        "\n",
+        "for ch in text:\n",
+        "    encrypted += chr(ord(ch) + shift)\n",
+        "\n",
+        "    newf = open(\"encrypted.txt\", \"w\")\n",
+        "    newf.write(encrypted)\n",
+        "\n",
+        "    f.close()\n",
+        "    newf.close()"
+      ],
+      "metadata": {
+        "id": "qpjIfS9hq9S1"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
