@@ -1,0 +1,44 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/%20Program%20for%20%20copy%20contents%20of%20one%20file%20into%20another%20%20file%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"file1.txt\", \"r\") as f1, open(\"file2.txt\", \"w\") as f2:\n",
+        "      data = f1.read()\n",
+        "          f2.write(data)\n",
+        "\n",
+        "          print(\"File copied successfully\")"
+      ],
+      "metadata": {
+        "id": "gF3u6TG-j2BP"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
