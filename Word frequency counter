@@ -1,0 +1,54 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/Word%20frequency%20counter\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import string\n",
+        "\n",
+        "f = open(\"article.txt\", \"r\")\n",
+        "text = f.read().lower()\n",
+        "\n",
+        "for p in string.punctuation:\n",
+        "    text = text.replace(p, \"\")\n",
+        "\n",
+        "    words = text.split()\n",
+        "    freq = {}\n",
+        "\n",
+        "    for word in words:\n",
+        "        freq[word] = freq.get(word, 0) + 1\n",
+        "\n",
+        "        print(freq)"
+      ],
+      "metadata": {
+        "id": "tgv7yS9Dm6vA"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
