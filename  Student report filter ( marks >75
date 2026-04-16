@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/%20Student%20report%20filter%20(%20marks%20%3E75\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f = open(\"students.txt\", \"r\")\n",
+        "newf = open(\"top_students.txt\", \"w\")\n",
+        "\n",
+        "for line in f:\n",
+        "    name, marks, city = line.strip().split(\",\")\n",
+        "        if int(marks) > 75:\n",
+        "                newf.write(line)\n",
+        "\n",
+        "                f.close()\n",
+        "                newf.close()\n",
+        "\n",
+        "                print(\"Filtered students saved\")"
+      ],
+      "metadata": {
+        "id": "4nCF2VtpmZEw"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
