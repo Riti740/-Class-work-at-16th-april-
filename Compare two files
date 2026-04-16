@@ -1,0 +1,60 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/Compare%20two%20files\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "qpjIfS9hq9S1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f1 = open(\"file1.txt\", \"r\")\n",
+        "f2 = open(\"file2.txt\", \"r\")\n",
+        "\n",
+        "lines1 = f1.readlines()\n",
+        "lines2 = f2.readlines()\n",
+        "\n",
+        "for line in lines1:\n",
+        "    if line not in lines2:\n",
+        "            print(line)\n",
+        "\n",
+        "            f1.close()\n",
+        "            f2.close()"
+      ],
+      "metadata": {
+        "id": "H_OAO6tRq9b6"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
