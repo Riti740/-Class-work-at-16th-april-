@@ -1,0 +1,52 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-16th-april-/blob/main/Remove%20%20duplicates%20lines\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f = open(\"file.txt\", \"r\")\n",
+        "lines = f.readlines()\n",
+        "\n",
+        "unique = []\n",
+        "for line in lines:\n",
+        "    if line not in unique:\n",
+        "            unique.append(line)\n",
+        "\n",
+        "            newf = open(\"newfile.txt\", \"w\")\n",
+        "            newf.writelines(unique)\n",
+        "\n",
+        "            f.close()\n",
+        "            newf.close()"
+      ],
+      "metadata": {
+        "id": "b29CzGZBntTE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
